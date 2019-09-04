@@ -3,11 +3,12 @@
 	"site": ["rainbow","ocean","country-side","landscape","stars","beach","snow covered mountains","field of horses","midnight sky"],
         "site 2": ["view","site","scenery"],
        "site 3":["site","view"],
-	"emotion": ["beautiful","stunning","amazing","captivating","peaceful"],
+        "words":["What","Always"],
+	"emotion": ["beautiful","stunning","amazing","captivating","peaceful","magical"],
 	"emotion 2": ["a breath-taking", "a gorgeous", "an impressive", "an awesome", "an overwhelming"],
-       "action": ["gazed upon", "stared at", "admired the","looked at", "watched"],
-       "watching": ["Taking in", "Seeing", "Looking at"],
-       "story": ["#who# #action# the #place#.  It was such #emotion 2# #site 3#. #watching# this #site 2# is always #emotion#."],
+       "action": ["gazed upon", "stared at", "admired","looked at", "watched"],
+       "blessed": ["Moments like this", "Reflecting on moments that"],
+       "story": ["#who# #action# the #place#.  #words# #emotion 2# #site 3#! ~#blessed# are #emotion#."],
 	"origin": ["#[who:#pronoun#][place:#site#]story#"]
 
 }
