@@ -2,11 +2,11 @@
 	"pronoun": ["I","We","She","He","They"],
 	"site": ["rainbow","ocean","country-side","landscape","stars","beach","snow covered mountains","field of horses","midnight sky"],
         "site 2": ["view","site","scenery"],
+       "site 3":["site","view"],
 	"emotion": ["beautiful","stunning","amazing","captivating","peaceful"],
-	"emotion 2": ["breath-taking","gorgeous","impressive","awesome","overwhelming"],
-       "action": ["gazed upon","stared at","admired the","looked at","watched"],
-       "watching": ["Taking in","Seeing","Looking at"],
-       "story": ["#who# #action# the #place#. It was #emotion 2#. #watching# this #site 2# is always #emotion#."],
+	"emotion 2": ["breath-taking", "gorgeous", "impressive", "awesome", "overwhelming"],
+       "action": ["gazed upon", "stared at", "admired the","looked at", "watched"],
+       "watching": ["Taking in", "Seeing", "Looking at"],
+       "story": ["#who# #action# the #place#.  It was such a #emotion 2# #site 3#. #watching# this #site 2# is always #emotion#."],
 	"origin": ["#[who:#pronoun#][place:#site#]story#"]
-
 }
