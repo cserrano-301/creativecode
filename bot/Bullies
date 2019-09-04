@@ -1,0 +1,12 @@
+{
+	"Bully phrase": ["'No one likes you'","'You're ugly'","'You're fat'","'Nobody wants you here'","'You're a loser'"],
+	"emotion": ["sad","terrible","like you are nothing","horrible","like you are alone"],
+	"emotion 2": ["important","somebody","perfect","special","needed"],
+        "call to action": ["put an end","STOP","speak up against","stop ignoring","stand up against"],
+        "call to action 2": ["speak","be your voice","help you stand tall","be your strength"],
+        "feel": ["feel","think"],
+        "feel 2": ["you cannot","you are not strong enough"],
+        "quote": ["Let your voice be heard and take a stance against bullying","Bullying has got to stop","Words cut like a knife","Bully-Free Zone","Stop Bullying"],
+        "story": ["Bullies like to say things like #Bully phrase#. This can make you feel #emotion#. It's time to #call to action# bullying. You are #emotion 2#! I will #call to action 2# when you #feel# #feel 2#. ~ #quote#!"],
+        "origin": ["#[who:#bully#][place:#emotion#]story#"]
+}
