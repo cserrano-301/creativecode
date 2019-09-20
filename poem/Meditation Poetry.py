@@ -30,7 +30,7 @@ print(" ".join(line2) )
 
 seed3 = random.randint(0, len(wordlist)-1)
 wordlist[seed3:seed3+34]
-line3=wordlist[seed3:seed3+3]
+line3=wordlist[seed3:seed3+4]
 print(" ".join(line3) )
 
 seed4 = random.randint(0, len(wordlist)-1)
@@ -79,7 +79,7 @@ print(" ".join(line2) )
 
 seed3 = random.randint(0, len(wordlist)-1)
 wordlist[seed3:seed3+34]
-line3=wordlist[seed3:seed3+3]
+line3=wordlist[seed3:seed3+4]
 print(" ".join(line3) )
 
 seed4 = random.randint(0, len(wordlist)-1)
