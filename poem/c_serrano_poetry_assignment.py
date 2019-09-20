@@ -10,91 +10,86 @@ Original file is located at
 I compiled a couple how to videos on mediatation and removed certain words like "labeling", "video" and "recap". I wanted to get a truer sense of the meditation process.
 """
 
-from google.colab import files
-
-uploaded = files.upload()
-for fn in uploaded.keys():
-  text = uploaded[fn].decode()
+with open('Meditation.txt', 'r') as file:
+    text = file.read()
 
 import random
 
-wordlist = text.replace("\r\n"," ").split(" ")
+wordlist = text.replace("\n"," ").split(" ")
 
 print( "\n")
 seed = random.randint(0, len(wordlist)-1)
-wordlist[seed:seed+3]
+wordlist[seed:seed+52]
 line1=wordlist[seed:seed+3]
 print(" ".join(line1) )
 
 seed2 = random.randint(0, len(wordlist)-1)
-wordlist[seed2:seed2+4]
+wordlist[seed2:seed2+80]
 line2=wordlist[seed2:seed2+4]
 print(" ".join(line2) )
 
 seed3 = random.randint(0, len(wordlist)-1)
-wordlist[seed3:seed3+3]
+wordlist[seed3:seed3+34]
 line3=wordlist[seed3:seed3+3]
 print(" ".join(line3) )
 
 seed4 = random.randint(0, len(wordlist)-1)
-wordlist[seed4:seed4+3]
-line2=wordlist[seed4:seed4+3]
-print(" ".join(line2) )
+wordlist[seed4:seed4+66]
+line4=wordlist[seed4:seed4+3]
+print(" ".join(line4) )
 
 seed5 = random.randint(0, len(wordlist)-1)
-wordlist[seed5:seed5+2]
-line4=wordlist[seed5:seed5+2]
+wordlist[seed5:seed5+47]
+line5=wordlist[seed5:seed5+2]
+print(" ".join(line5) )
+
+print( "\n")
+
+seed = random.randint(0, len(wordlist)-1)
+wordlist[seed:seed+52]
+line1=wordlist[seed:seed+3]
+print(" ".join(line1) )
+
+seed2 = random.randint(0, len(wordlist)-1)
+wordlist[seed2:seed2+80]
+line2=wordlist[seed2:seed2+4]
+print(" ".join(line2) )
+
+seed3 = random.randint(0, len(wordlist)-1)
+wordlist[seed3:seed3+34]
+line3=wordlist[seed3:seed3+3]
+print(" ".join(line3) )
+
+seed4 = random.randint(0, len(wordlist)-1)
+wordlist[seed4:seed4+66]
+line4=wordlist[seed4:seed4+2]
 print(" ".join(line4) )
 
 print( "\n")
 
 seed = random.randint(0, len(wordlist)-1)
-wordlist[seed:seed+3]
+wordlist[seed:seed+52]
 line1=wordlist[seed:seed+3]
 print(" ".join(line1) )
 
 seed2 = random.randint(0, len(wordlist)-1)
-wordlist[seed2:seed2+4]
-line2=wordlist[seed2:seed2+4]
-print(" ".join(line2) )
-
-seed3 = random.randint(0, len(wordlist)-1)
-wordlist[seed3:seed3+3]
-line3=wordlist[seed3:seed3+3]
-print(" ".join(line3) )
-
-seed4 = random.randint(0, len(wordlist)-1)
-wordlist[seed4:seed4+2]
-line2=wordlist[seed4:seed4+2]
-print(" ".join(line2) )
-
-print( "\n")
-
-
-
-seed = random.randint(0, len(wordlist)-1)
-wordlist[seed:seed+3]
-line1=wordlist[seed:seed+3]
-print(" ".join(line1) )
-
-seed2 = random.randint(0, len(wordlist)-1)
-wordlist[seed2:seed2+5]
+wordlist[seed2:seed2+80]
 line2=wordlist[seed2:seed2+5]
 print(" ".join(line2) )
 
 seed3 = random.randint(0, len(wordlist)-1)
-wordlist[seed3:seed3+3]
+wordlist[seed3:seed3+34]
 line3=wordlist[seed3:seed3+3]
 print(" ".join(line3) )
 
 seed4 = random.randint(0, len(wordlist)-1)
-wordlist[seed4:seed4+2]
-line2=wordlist[seed4:seed4+2]
-print(" ".join(line2) )
+wordlist[seed4:seed4+66]
+line4=wordlist[seed4:seed4+2]
+print(" ".join(line4) )
 
 print( "\n")
 
 seed5 = random.randint(0, len(wordlist)-1)
-wordlist[seed5:seed5+3]
-line4=wordlist[seed5:seed5+3]
-print(" ".join(line4) )
+wordlist[seed5:seed5+47]
+line5=wordlist[seed5:seed5+3]
+print(" ".join(line5) )
