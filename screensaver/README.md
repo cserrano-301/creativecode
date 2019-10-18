@@ -1,12 +1,11 @@
 # Rotating boxes - trampoline effect 
  
 
+This is a screensaver project for my Creative Coding class. The hardest part for me was coming up with an idea for this project. I decided to start playing around with the different features of p5.js to see what they did. Initially, I was drawn to the box in a box effect and liked how I could rotate the boxes within themselves to create a nice effect. I tried other designs which lead me to the pulsing effect. It reminds me of jumping on a trampoline.
 
-This project is a "screensaver" designed for the media wall in the HCC. The main image is a logo of umw with a solid-colored square behind it. That logo moves around in the open space and changes color whenever it strikes a wall. The walls around this space are designed to match the opening on the media wall, so the effect is the logo bouncing around on that irregularly-shaped screen. 
+I was able to utilize code from the p5.js reference guide as well as code from The Coding Train on youtube: https://youtu.be/yPWkPOfnGsw
+Most of the code became trial and error with adjusting the parameters as well as adding and taking away pieces of the code to see what would happen. The end result is something I am happy with.
 
 To view this screensaver go to: https://editor.p5js.org/cserrano/full/0kzN3RI3b
 
-
-
-
-For version I'm sharing here, run it by copying the javascript [source code](forthewall.js) into a [p5.js editor](http://editor.p5js.org). 
+It can also be run in a [p5.js editor](http://editor.p5js.org). 
