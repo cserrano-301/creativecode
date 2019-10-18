@@ -11,7 +11,7 @@ var col = {
 
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  createCanvas(800, 800, WEBGL);
   //https://p5js.org/reference/#/p5/rectMode - adjusted perameters
   rectMode(CENTER);
   col.r = random (150,218);
