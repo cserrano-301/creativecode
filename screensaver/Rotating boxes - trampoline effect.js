@@ -1,8 +1,7 @@
-//mash up of ideas: credit to Coding train 2.5 and p5js reference guide - parameters adjusted
+//mash up of ideas: credit to Coding train 2.5 and p5js reference guide
 
-let a = 0.0;
-let s = 0.0;
-
+let a = -0.07;
+let s = 0.02;
 
 var col = {
   r: 219,
@@ -12,8 +11,8 @@ var col = {
 
 
 function setup() {
-  createCanvas(800, 800, WEBGL);
-  //https://p5js.org/reference/#/p5/rectMode - adjusted parameters
+  createCanvas(600, 600, WEBGL);
+  //https://p5js.org/reference/#/p5/rectMode - adjusted perameters
   rectMode(CENTER);
   col.r = random (150,218);
   col.g = random (60,130);
@@ -22,19 +21,16 @@ function setup() {
 
 function draw() {
   background(0);
-  rectMode(CENTER);
-
+  //rectMode(CENTER);
   //https://p5js.org/examples/transform-scale.html
-  a = a + 0.02;
+  a = a + 0.01;
   s = cos(a) * 1.5;
-  translate(width / 2, height / 2);
+  translate(width / -50, height / -50);
   scale(s);
-  rect(0, 0, 400, 400);
-  translate(75, 0);
-  scale(s);
-  rect(0, 0, 400, 400);
+  frameRate(75);
   
-  //p5js reference - 3d
+  
+  //p5js reference - 3D
   rotateX(millis() / 1000);
   rotateX(PI / -4);
   //blue boxes
