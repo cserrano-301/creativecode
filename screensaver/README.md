@@ -9,4 +9,4 @@ Most of the code became trial and error with adjusting the parameters as well as
 To view this screensaver in fullscreen: https://editor.p5js.org/cserrano/full/0kzN3RI3b
 
 
-It can also be run the code "screensaver/Rotating boxes - trampoline effect.js" in a [p5.js editor](http://editor.p5js.org). 
+It can also run the code "screensaver/Rotating boxes - trampoline effect.js" in a [p5.js editor](http://editor.p5js.org). 
