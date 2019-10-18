@@ -6,6 +6,7 @@ This is a screensaver project for my Creative Coding class. The hardest part for
 I was able to utilize code from the p5.js reference guide as well as code from The Coding Train on youtube: https://youtu.be/yPWkPOfnGsw
 Most of the code became trial and error with adjusting the parameters as well as adding and taking away pieces of the code to see what would happen. The end result is something I am happy with.
 
-To view this screensaver go to: https://editor.p5js.org/cserrano/full/0kzN3RI3b
+To view this screensaver in fullscreen: https://editor.p5js.org/cserrano/full/0kzN3RI3b
 
-It can also be run in a [p5.js editor](http://editor.p5js.org). 
+
+It can also be run the code "screensaver/Rotating boxes - trampoline effect.js" in a [p5.js editor](http://editor.p5js.org). 
