@@ -1,4 +1,4 @@
-# Dream Big Clock
+# Work Hard - Dream Big Clock
 
 My clock does many things for me. Not only does it provide me with the date and time but it encourages me to dream big. As we get older, we often forget about different dreams and shift gear to reality and what is going on in our day to day. I really like this clock because it helps me to remember my dreams and why I work as hard as I do. I guess you could say that it gives me a bit of motivation to push through the day because I know have something to look forward to. One of my biggest dreams is to be able to travel the world and see amazing sites, experience the history and the culture in other countries. This allows me to stay focused on some of those goals.
 
