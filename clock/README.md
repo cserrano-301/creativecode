@@ -7,4 +7,4 @@ With the help of the https://p5js.org/reference/#/p5/preload, I was able to get 
 Figuring out UTC was a bit of a struggle but eventually I got it to code correctly. It does have to be adjusted during daylight savings time and winter/summer time in Ireland.
 
 
-You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/3Kz-Yqfs- you can also copy the code from the javascript file and run it in http://editor.p5js.org.
+You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/3Kz-Yqfs- you can also copy the code from the javascript file (WorkHardDreamBig.js) and run it in http://editor.p5js.org.
