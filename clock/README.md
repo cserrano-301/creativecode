@@ -1,12 +1,10 @@
-# Concentric Clock
+# Dream Big Clock
 
-This is an abstract clock I made with p5.js. The easiest way to see it in action is to copy the contents of [the javascript file](concentric-clock.js)  into a [p5.js editor](http://editor.p5js.org) and run it.
+My clock does many things for me. Not only does it provide me with the date and time but it encourages me to dream big. As we get older, we often forget about different dreams and shift gear to reality and what is going on in our day to day. I really like this clock because it helps me to remember my dreams and why I work as hard as I do. I guess you could say that it gives me a bit of motivation to push through the day because I know have something to look forward to. One of my biggest dreams is to be able to travel the world and see amazing sites, experience the history and the culture in other countries. This allows me to stay focused on some of those goals.
 
-To read the clock's time, you have to count the number of dots in each circle. The inner ring (green) is hours, the middle ring (purple) is the number of minutes past the hour, and the outer (red) ring is the number of seconds past the minute.
+With the help of the https://p5js.org/reference/#/p5/preload, I was able to get multiple pictures located within the code. I also referenced https://googlecreativelab.github.io/coder-projects/projects/digital_clock/ to help me get meridiem to populate correctly.
 
-The concepts demonstrated in the code rely on some of the examples shared by Golan Levin in the instructions for his class's [clock assignment](https://github.com/golanlevin/lectures/tree/master/lecture_clock), and the look of it sort of resembles the soft bubbles of [bokeh photography](https://en.wikipedia.org/wiki/Bokeh).
-
-I like the abstract nature of this clock, even though that abstractness makes it less useful. I figure there are so many ways now to know what time it is (as I type this, I can see the current time displayed by my computer, by the watch on my wrist, and my phone on the desk next to me) that the goal of a time-based art work isn't so much to tell us what time it is but rather to encourage us to think about time and its representation.
+Figuring out UTC was a bit of a struggle but eventually I got it to code correctly. It does have to be adjusted during daylight savings time and winter/summer time in Ireland.
 
 
-You can check out my clock in P5js by following this link: https://editor.p5js.org/cserrano/full/3Kz-Yqfs-
+You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/3Kz-Yqfs- you can also copy the code from the javascript file and run it in http://editor.p5js.org.
