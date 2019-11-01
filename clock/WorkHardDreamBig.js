@@ -14,6 +14,10 @@ function preload() {
   africa = loadImage('elephant.jpg');
 }
 
+
+month30 = ["4,6,9,11"];
+month28 = ["2"];
+
 function setup() {
   createCanvas(500, 500);
   
@@ -26,21 +30,28 @@ function setup() {
 function draw() {
   background(0);
   fill (255);
-  m = month()
+  mon = month()
   d = day()
   y = year()
   textAlign(CENTER, CENTER);
   textSize(14);
   fill(0, 102, 253, 151);
   text("Virginia", 0, 130, width,90);
-  text("Today is: " + m + " / " + d + " / " + y, 0, 153, width,90);
+  text("Today is: " + mon + " / " + d + " / " + y, 0, 153, width,90);
   h = hour()
   //Using to convert time to UTC from Eastern Time
   newHourUTC = h+4
   if (newHourUTC > 24) {
     newHourUTC = newHourUTC - 24;
-    d = d+1;  
-    }
+    d = d+1;
+    if (d ==32){
+      d = 1 
+      mon = mon+1}
+    else if (mon == month30 && d == 31 || mon == month28 && d == 29);{
+      d = 1
+      mon = mon}
+       
+ }
   m = minute()
   newMinute = minute()
   //Had trouble figuring out how to get AM and PM into the time   
@@ -68,8 +79,8 @@ function draw() {
   textSize(12);
     fill(140, 22, 198, 191);
   text("Italy", 40, 20, width,90);
-  text("The date is: " + month() + " / " + d + " / " + y, 5, 40, width,60);
-  //calculating Italy Time   
+  text("The date is: " + mon + " / " + d + " / " + y, 5, 40, width,60);
+    //calculating Italy Time   
   italyTime = newHourUTC + 1;
   if (italyTime > 12) {
     italyTime = italyTime - 12;
@@ -87,7 +98,7 @@ function draw() {
   textSize(12);
     fill(140, 202, 108, 151);
   text("Ireland", -60, 20, width,90);
-  text("The date is: " + month() + " / " + d + " / " + y, -13, 40, width,60);
+  text("The date is: " + mon + " / " + d + " / " + y, -13, 40, width,60);
   //calculating Ireland Time   
   //"Winter" time in Ireland is UTC = -0, "Summer" time = -1
   irelandTime = newHourUTC -0;
@@ -107,7 +118,7 @@ function draw() {
   textSize(12);
     fill(240, 22, 198, 191);
   text("Japan", 40, 258, height,55);;
-  text("The date is: " + month() + " / " + d + " / " + y, 5, 272, width,60);
+  text("The date is: " + mon + " / " + d + " / " + y, 5, 272, width,60);
         
   //calculating Japan Time    
   japanTime = newHourUTC + 9;
@@ -122,11 +133,11 @@ function draw() {
   text ("Okinawa! Goal: 2022!", 5, 80, width,292);
     image(japan, 33, 390, 70, 70);
   }
-  textAlign(RIGHT, BOTTOM);{
+   textAlign(RIGHT, BOTTOM);{
   textSize(12);
     fill(255, 80, 80, 191);
   text("Africa", -70, 221, width,90);
-    text("The date is: " + month() + " / " + d + " / " + y, -13, 270, width,60);
+    text("The date is: " + mon + " / " + d + " / " + y, -13, 270, width,60);
      
   //calculating Africa Time   
   africaTime = newHourUTC + 2;
