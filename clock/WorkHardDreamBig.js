@@ -1,12 +1,16 @@
 //Code from P5jS - https://p5js.org/reference/#/p5/preload
+
 let img;
 let c;
 function preload() {
   // preload() runs once
   // load images
   img = loadImage('IMG_1284.JPG');
+  //Rome - Photo by Willian West on Unsplash
   rome = loadImage('ROME.jpg');
+  //Japan - Photo by Manuel Cosentino on Unsplash
   japan = loadImage('Japan.jpg');
+  //Elephants - Photo by Charl Durand on Unsplash
   africa = loadImage('elephant.jpg');
 }
 
@@ -65,7 +69,7 @@ function draw() {
     fill(140, 22, 198, 191);
   text("Italy", 40, 20, width,90);
   text("The date is: " + month() + " / " + d + " / " + y, 5, 40, width,60);
-    //calculating Italy Time   
+  //calculating Italy Time   
   italyTime = newHourUTC + 1;
   if (italyTime > 12) {
     italyTime = italyTime - 12;
@@ -118,7 +122,7 @@ function draw() {
   text ("Okinawa! Goal: 2022!", 5, 80, width,292);
     image(japan, 33, 390, 70, 70);
   }
-   textAlign(RIGHT, BOTTOM);{
+  textAlign(RIGHT, BOTTOM);{
   textSize(12);
     fill(255, 80, 80, 191);
   text("Africa", -70, 221, width,90);
