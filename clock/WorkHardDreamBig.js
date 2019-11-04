@@ -40,7 +40,8 @@ function draw() {
   text("Today is: " + mon + " / " + d + " / " + y, 0, 153, width,90);
   h = hour()
   //Using to convert time to UTC from Eastern Time
-  newHourUTC = h+4
+  //adjust UTC time to account for daylight savings
+  newHourUTC = h+5
   if (newHourUTC > 24) {
     newHourUTC = newHourUTC - 24;
     d = d+1;
