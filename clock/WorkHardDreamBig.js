@@ -15,8 +15,8 @@ function preload() {
 }
 
 
-month30 = ["4,6,9,11"];
-month28 = ["2"];
+//month30 = ["4,6,9,11"];
+//month28 = ["2"];
 
 function setup() {
   createCanvas(500, 500);
@@ -45,12 +45,12 @@ function draw() {
   if (newHourUTC > 24) {
     newHourUTC = newHourUTC - 24;
     d = d+1;
-    if (d ==32){
-      d = 1 
-      mon = mon+1}
-    else if (mon == month30 && d == 31 || mon == month28 && d == 29);{
-      d = 1
-      mon = mon}
+    //if (d ==32){
+    //  d = 1 
+    //  mon = mon+1}
+   // else if (mon == month30 && d == 31 || mon == month28 && d == 29);{
+   //   d = 1
+   //   mon = mon}
        
  }
   m = minute()
@@ -59,11 +59,13 @@ function draw() {
   //Found at - https://googlecreativelab.github.io/coder-  projects/projects/digital_clock/
   // Let's set the AM and PM meridiem and 
   // 12-hour format
-  var meridiem = "AM";  // Default is AM
-  if (h > 12) {
+  var meridiem = "";  // Default is AM
+  if (h >= 12) {
     h = h - 12;
     meridiem = "PM";
-  }   
+  }   else {
+    meridiem = "AM";
+  }
   // 0 AM and 0 PM should read as 12
   if (h === 0) {
     h = 12;    
@@ -83,9 +85,13 @@ function draw() {
   text("The date is: " + mon + " / " + d + " / " + y, 5, 40, width,60);
     //calculating Italy Time   
   italyTime = newHourUTC + 1;
-  if (italyTime > 12) {
+ 
+  if (italyTime >= 12) {
     italyTime = italyTime - 12;
-  }  
+    meridiem = "PM";
+  }  else {
+    meridiem = "AM";
+  }
   // 0 AM and 0 PM should read as 12
   if (italyTime === 0) {
     italyTime = 12;    
@@ -99,19 +105,22 @@ function draw() {
   textSize(12);
     fill(140, 202, 108, 151);
   text("Ireland", -60, 20, width,90);
-  text("The date is: " + mon + " / " + d + " / " + y, -13, 40, width,60);
+  text("The date is: " + mon + " / " + d + " / " + y, -21, 40, width,60);
   //calculating Ireland Time   
   //"Winter" time in Ireland is UTC = -0, "Summer" time = -1
   irelandTime = newHourUTC -0;
-  if (irelandTime > 12) {
+  if (irelandTime >= 12) {
     irelandTime = irelandTime - 12;
+   meridiem = "PM";
+  }  else {
+    meridiem = "AM";
   }  
   // 0 AM and 0 PM should read as 12
-  //if (irelandTime === 0) {
-    //irelandTime = 12;    
-  //}
+  if (irelandTime === 0) {
+    irelandTime = 12;    
+  }
   text("The current time is: " + irelandTime + ":" + newMinute + meridiem, -5, 60, width,90);
-  text ("Cliffs of Moher - 2018!", -33, 80, width,90);
+  text ("Cliffs of Moher: 2018!", -37, 80, width,90);
     image(img, 393, 110, 70, 70);
   }
     
@@ -123,9 +132,12 @@ function draw() {
         
   //calculating Japan Time    
   japanTime = newHourUTC + 9;
-  if (japanTime > 12) {
+  if (japanTime >= 12) {
     japanTime = japanTime - 12;
-    meridiem = "PM";}
+    meridiem = "PM";
+  }  else {
+    meridiem = "AM";
+  }
   // 0 AM and 0 PM should read as 12
   if (japanTime === 0) {
     japanTime = 12;    
@@ -142,8 +154,11 @@ function draw() {
      
   //calculating Africa Time   
   africaTime = newHourUTC + 2;
-  if (africaTime > 12) {
+  if (africaTime >= 12) {
     africaTime = africaTime - 12;
+    meridiem = "PM";
+  }  else {
+    meridiem = "AM";
   }
   // 0 AM and 0 PM should read as 12
   if (africaTime === 0) {
