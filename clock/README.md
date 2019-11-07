@@ -8,4 +8,4 @@ Figuring out UTC was a bit of a struggle but eventually, I got it to code correc
 
 Special credit for photos: Rome - Photo by Willian West on Unsplash, Japan - Photo by Manuel Cosentino on Unsplash, Elephants - Photo by Charl Durand on Unsplash
 
-You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/3Kz-Yqfs- you can also copy the code from the javascript file (WorkHardDreamBig.js) and run it in http://editor.p5js.org.
+You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/6j_zlJLkg you can also copy the code from the javascript file (WorkHardDreamBig.js) and run it in http://editor.p5js.org.
