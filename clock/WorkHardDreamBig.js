@@ -132,15 +132,15 @@ function draw() {
         
   //calculating Japan Time    
   japanTime = newHourUTC + 9;
-  if (japanTime >= 12) {
-    japanTime = japanTime - 12;
-    meridiem = "PM";
-  }  else {
+  if (japanTime >= 24) {
+    japanTime = japanTime - 24;
     meridiem = "AM";
+  }  else {
+    meridiem = "PM";
   }
   // 0 AM and 0 PM should read as 12
   if (japanTime === 0) {
-    japanTime = 12;    
+    japanTime = 12;     
   }
   text("The current time is: " + japanTime + ":" + newMinute + meridiem, 5, 262, width,90);
   text ("Okinawa! Goal: 2022!", 5, 80, width,292);
