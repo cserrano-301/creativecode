@@ -42,7 +42,8 @@ function draw() {
   //Using to convert time to UTC from Eastern Time
   //adjust UTC time to account for daylight savings
   newHourUTC = h+5
-  if (newHourUTC > 24) {
+  japanDay = d+1
+  if (newHourUTC >= 24) {
     newHourUTC = newHourUTC - 24;
     d = d+1;
     //if (d ==32){
@@ -127,20 +128,20 @@ function draw() {
   textAlign(LEFT, BOTTOM);{
   textSize(12);
     fill(240, 22, 198, 191);
-  text("Japan", 40, 258, height,55);;
-  text("The date is: " + mon + " / " + d + " / " + y, 5, 272, width,60);
+  text("Japan", 40, 258, height,55);
+  text("The date is: " + mon + " / " + japanDay + " / " + y, 5, 272, width,60);
         
   //calculating Japan Time    
   japanTime = newHourUTC + 9;
-  if (japanTime >= 24) {
-    japanTime = japanTime - 24;
+  if (japanTime >= 12) {
+    japanTime = japanTime - 12;
     meridiem = "AM";
   }  else {
     meridiem = "PM";
   }
   // 0 AM and 0 PM should read as 12
   if (japanTime === 0) {
-    japanTime = 12;     
+    japanTime = 12;    
   }
   text("The current time is: " + japanTime + ":" + newMinute + meridiem, 5, 262, width,90);
   text ("Okinawa! Goal: 2022!", 5, 80, width,292);
@@ -150,7 +151,7 @@ function draw() {
   textSize(12);
     fill(255, 80, 80, 191);
   text("Africa", -70, 221, width,90);
-    text("The date is: " + mon + " / " + d + " / " + y, -13, 270, width,60);
+    text("The date is: " + mon + " / " + d + " / " + y, -20, 270, width,60);
      
   //calculating Africa Time   
   africaTime = newHourUTC + 2;
