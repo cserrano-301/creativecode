@@ -1,0 +1,15 @@
+{
+	"pronoun": ["I","We","She","He","They"],
+	"site": ["rainbow","ocean","country-side","landscape","stars","beach","snow covered mountains","field of horses","midnight sky"],
+        "site 2": ["view","site","scenery"],
+       "site 3":["site","view"],
+        "words":["What","Always"],
+	"emotion": ["Beautiful","Stunning","Amazing","Captivating","Peaceful","Magical"],
+	"emotion 2": ["a breath-taking", "a gorgeous", "an impressive", "an awesome", "an overwhelming"],
+       "action": ["gazed upon", "stared at", "admired","looked at", "watched"],
+       "blessed": ["Moments like this", "Reflecting on moments that"],
+	"emoji": ["😍","❤","😘", "💕", "💖", "🙌", "🧡", "💛", "💚", "💙", "💜", "💗", "💖", "💓", "💕", "🥰", "🤩", "😻", "👀", "💋", "✨"],
+	"story": ["#who# #action# the #place#.  #words# #emotion 2# #site 3#! ~ #emotion# #emoji#"],
+	"origin": ["#[who:#pronoun#][place:#site#]story#"]
+
+}
