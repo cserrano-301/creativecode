@@ -1,6 +1,7 @@
 //Code from P5jS - https://p5js.org/reference/#/p5/preload
 
 let img;
+let flash = [];
 let c;
 function preload() {
   // preload() runs once
@@ -19,25 +20,34 @@ function preload() {
 //month28 = ["2"];
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(800, 800);
   
   // setup() waits until preload() is done
   img.loadPixels();
   // get color of middle pixel
   c = img.get(img.width / 2, img.height / 2);
+  for (i = 1; i <2; i++) {
+    flash.push({
+        x: random(100) + 150,
+        y: random(180) + 120,
+        color: random(200),
+        s: random(5)
+     });
+  }
 }
 
 function draw() {
-  background(0);
+  background(190,52,80,45);
   fill (255);
   mon = month()
   d = day()
   y = year()
   textAlign(CENTER, CENTER);
-  textSize(14);
-  fill(0, 102, 253, 151);
-  text("Virginia", 0, 130, width,90);
-  text("Today is: " + mon + " / " + d + " / " + y, 0, 153, width,90);
+  textSize(22);
+  textStyle(BOLD);
+  fill(10, 82, 153, 251);
+  text("Virginia", 0, 300, width,90);
+  text("Today is: " + mon + " / " + d + " / " + y, 0, 330, width,90);
   h = hour()
   //Using to convert time to UTC from Eastern Time
   //adjust UTC time to account for daylight savings
@@ -75,15 +85,16 @@ function draw() {
     newMinute = 0 + minute().toString()}
   
   textAlign(CENTER, CENTER);
-  text("The time is: " + h + ":" + newMinute + meridiem, 0, 198, width,90);
+  text("The time is: " + h + ":" + newMinute + meridiem, 0, 365, width,90);
   fill(255, 204, 220, 190);
-  text ("Work Hard! Dream Big!", 0,220,width);
+  text ("Work Hard! Dream Big!", 5,450,width);
     
   textAlign(LEFT, TOP);{
-  textSize(12);
-    fill(140, 22, 198, 191);
-  text("Italy", 40, 20, width,90);
-  text("The date is: " + mon + " / " + d + " / " + y, 5, 40, width,60);
+  textSize(18);
+    fill(0);
+  image(rome, 0, 0, 280, 280);
+  text("Italy", 120, 20, width,90);
+  text("The date is: " + mon + " / " + d + " / " + y, 30, 40, width,60);
     //calculating Italy Time   
   italyTime = newHourUTC + 1;
  
@@ -97,15 +108,16 @@ function draw() {
   if (italyTime === 0) {
     italyTime = 12;    
   }  
-  text("The current time is: " + italyTime + ":" + newMinute + meridiem, 5, 60, width,90);
-  text ("Rome! Goal: 2020!", 5, 80, width,90);
-  image(rome, 33, 110, 70, 70);
+  text("The current time is: " + italyTime + ":" + newMinute + meridiem, 26, 62, width,90);
+  text ("Rome! Goal: 2020!", 62, 255, width,90);
+  
   }
   
   textAlign(RIGHT, TOP);{
-  textSize(12);
-    fill(140, 202, 108, 151);
-  text("Ireland", -60, 20, width,90);
+  textSize(18);
+    fill(0);
+    image(img, 520, 0, 280, 280);
+  text("Ireland", -104, 20, width,90);
   text("The date is: " + mon + " / " + d + " / " + y, -21, 40, width,60);
   //calculating Ireland Time   
   //"Winter" time in Ireland is UTC = -0, "Summer" time = -1
@@ -120,16 +132,17 @@ function draw() {
   if (irelandTime === 0) {
     irelandTime = 12;    
   }
-  text("The current time is: " + irelandTime + ":" + newMinute + meridiem, -5, 60, width,90);
-  text ("Cliffs of Moher: 2018!", -37, 80, width,90);
-    image(img, 393, 110, 70, 70);
+  text("The current time is: " + irelandTime + ":" + newMinute + meridiem, -12, 62, width,90);
+  text ("Cliffs of Moher: 2018!", -37, 255, width,90);
+    
   }
     
   textAlign(LEFT, BOTTOM);{
-  textSize(12);
-    fill(240, 22, 198, 191);
-  text("Japan", 40, 258, height,55);
-  text("The date is: " + mon + " / " + japanDay + " / " + y, 5, 272, width,60);
+  textSize(18);
+    fill(0);
+  image(japan, 0, 515, 280, 280);
+  text("Japan", 108, 494, height,55);
+  text("The date is: " + mon + " / " + japanDay + " / " + y, 28, 510, width,60);
         
   //calculating Japan Time    
   japanTime = newHourUTC + 9;
@@ -143,15 +156,16 @@ function draw() {
   if (japanTime === 0) {
     japanTime = 12;    
   }
-  text("The current time is: " + japanTime + ":" + newMinute + meridiem, 5, 262, width,90);
-  text ("Okinawa! Goal: 2022!", 5, 80, width,292);
-    image(japan, 33, 390, 70, 70);
+  text("The current time is: " + japanTime + ":" + newMinute + meridiem, 20, 500, width,90);
+  text ("Okinawa! Goal: 2022!", 52, 500, width,292);
+    
   }
    textAlign(RIGHT, BOTTOM);{
-  textSize(12);
-    fill(255, 80, 80, 191);
-  text("Africa", -70, 221, width,90);
-    text("The date is: " + mon + " / " + d + " / " + y, -20, 270, width,60);
+  textSize(18);
+    fill(0);
+  image(africa, 520, 515, 280, 280);
+  text("Africa", -110, 460, width,90);
+    text("The date is: " + mon + " / " + d + " / " + y, -20, 510, width,60);
      
   //calculating Africa Time   
   africaTime = newHourUTC + 2;
@@ -165,8 +179,19 @@ function draw() {
   if (africaTime === 0) {
     africaTime = 12;    
   }
-  text("The current time is: " + africaTime + ":" + newMinute + meridiem, -5, 260, width,90);
-  text ("Elephants! Goal: 2024!", -28, 80, width,290);
-     image(africa, 393, 390, 70, 70);
+  text("The current time is: " + africaTime + ":" + newMinute + meridiem, -14, 500, width,90);
+  text ("Elephants! Goal: 2024!", -35, 500, width,290);
+     
   }
+  colorMode(HSL, 260, 100, 100, 1);{
+  for (i = 0; i < flash.length; i++) {
+    flash[i].color = flash[i].color % 80 + 0.3;
+    flash[i].s = flash[i].s % .0 + 0.15;
+    stroke(flash[i].color, 88, 168, 99);
+    strokeWeight(flash[i].s);
+    fill(flash[i].color, 88, 168, 99);
+  }
+    colorMode(RGB,320,318,400,57);
+  }
+  
 }
