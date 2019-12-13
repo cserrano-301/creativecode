@@ -9,3 +9,6 @@ Figuring out UTC was a bit of a struggle but eventually, I got it to code correc
 Special credit for photos: Rome - Photo by Willian West on Unsplash, Japan - Photo by Manuel Cosentino on Unsplash, Elephants - Photo by Charl Durand on Unsplash
 
 You can check out my clock in P5.js by following this link: https://editor.p5js.org/cserrano/full/6j_zlJLkg you can also copy the code from the javascript file (WorkHardDreamBig.js) and run it in http://editor.p5js.org.
+
+Updated: 12/12/19
+Based on the feedback I received from my professor, I have decided to go back and take a look at a few additional assignments and see what I could do to "spruce" them up.  Starting with my Work Hard Dream Big Clock, not only did I make the overall image itself bigger but I also made the four images within it larger as well. I was able to increase the font size on the text and have it overlay in each of the pictures. Doing so made it hard to read so I used the same feature from my Countdown to Christmas Clock and created an outline effect. 
