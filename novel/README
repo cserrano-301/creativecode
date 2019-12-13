@@ -1,4 +1,4 @@
-## Human Soul
+# Human Soul
 This [python script](HumanSoul.py) uses a Markov chain generator. Using text from three different source books (The Monkeys Paw, Meditation, and The Way of Peace), 
 the Markov chain generated sentences from each of these books and created something new. 
 
